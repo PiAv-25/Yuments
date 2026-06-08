@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yuments</title>
+
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" href="imagenes/logos/onlylogo.png">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="imagenes/logos/Logo.png" alt="Logo Yuments" class="logo">
+            <button id="btnEventos" class="nav-btn">Eventos</button>
+            <div id="auth">
+                <button id="btnLogin" class="nav-btn">Iniciar sesión</button>
+                <button id="btnRegistro" class="nav-btn">Registro</button>
+            </div>
+            <div id="perfil" style="display:none;">
+                <button id="btnPerfil" class="nav-btn">Perfil</button>
+                <div id="menuPerfil" style="display:none;">
+                    <p id="nombreUsuario"></p>
+                    <p id="correoUsuario"></p>
+                    <button id="btnIreventos">Mis Eventos</button>
+                    <button id="btnCerrar">Cerrar sesión</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!--SECCION INICIO-->
+        <section id="inicio">
+            <!--BLOQUE 1-->
+            <div class="bloqueUno">
+
+                <h1>Organiza y vive tus eventos fácilmente</h1>
+                 <p>
+                    Explora, inscríbete y gestiona tus eventos en un solo lugar.
+                    Una experiencia rápida, moderna y sin complicaciones.
+                </p>
+
+            </div>
+
+            <hr>
+
+            <!--BLOQUE 2-->
+            <h2>Descubre eventos y inscríbete en segundos</h2>
+
+            <!-- aquí las  cards -->
+            <div class="contenedor-eventos">
+
+                <!-- Inicio DE CARD 1 -->
+                <div class="card">
+                    <!-- PARTE SIEMPRE VISIBLE -->
+                    <img src="imagenes/evento10.webp" alt="imagen de la banda THE BEATLES">
+
+                    <div class="info-basica">
+                        <span class="fecha">14 JUN</span>
+                        <span class="ciudad">Lima</span>
+                    </div>
+
+                    <h3>SINFÓNIA 360:THE BEATLES EN LA CÚPULA 2026 </h3>
+
+                    <!-- FOOTER SIEMPRE -->
+                    <div class="footer-card">
+                        <p>Desde: S/50</p>
+                        <button class="btnabrir">+</button>
+                    </div>
+
+                    <!-- PARTE OCULTA -->
+                    <div class="detalle" style="display: none;">
+                        <div class="info-detalle">
+                            <p>
+                                Por primera vez en el Perú, llega una experiencia inmersiva que revive la magia de The
+                                Beatles en un escenario 360°, acompañada por una orquesta sinfónica que interpretará los
+                                temas más emblemáticos de la banda de Liverpool.
+                            </p>
+                            <p><strong>Lugar:</strong> Cúpula de las Artes</p>
+                            <p><strong>Hora:</strong> 7:00 PM</p>
+                        </div>
+
+                        <!-- FOOTER EXPANDIDO -->
+                        <div class="footer-detalle">
+                            
+                            <div class="lado-izquierdo">
+                                <p class="precio">Desde: S/50</p>
+                                <button class="btnInscribirse">Inscribirse</button>
+                                
+                            </div>
+                            <button class="btncerrar">-</button>
+                        </div>
+                        <!-- CIERRE FOOTER EXPANDIDO -->
+                    </div>
+                    <!-- CIERRE PARTE OCULTA -->
+                </div> <!-- CIERRE DE CARD -->
+
+                <!-- Inicio DE CARD 2 -->
+                <div class="card">
+                    <!-- PARTE SIEMPRE VISIBLE -->
+                    <img src="imagenes/evento11.webp" alt="imagen de un hombre corriendo">
+
+                    <div class="info-basica">
+                        <span class="fecha">14 JUN</span>
+                        <span class="ciudad">Lima</span>
+                    </div>
+
+                    <h3>RUM & TRAIL FEST HOSTED BY MENORCE EDITION - SEGUNDA EDICIÓN</h3>
+
+                    <!-- FOOTER SIEMPRE -->
+                    <div class="footer-card">
+                        <p>Desde: S/120</p>
+                        <button class="btnabrir">+</button>
+                    </div>
+
+                    <!-- PARTE OCULTA -->
+                    <div class="detalle" style="display: none;">
+                        <div class="info-detalle">
+                            <p>
+                                ¿Listo para un desafío que combina velocidad, trail y mucha diversión?
+                                Después de una increíble primera edición, este domingo 14 de junio vuelve el Run & Trail
+                                Fest.
+                                Una carrera diferente que combina pista y cerro en una sola experiencia
+                            </p>
+                            <p><strong>Lugar:</strong>Condominio Costa Linda Menorca</p>
+                            <p><strong>Hora:</strong> 8:00 AM</p>
+                        </div>
+
+                        <!-- FOOTER EXPANDIDO -->
+                        <div class="footer-detalle">
+                            
+                            <div class="lado-izquierdo">
+                                <p class="precio">Desde: S/120</p>
+                                <button class="btnInscribirse">Inscribirse</button>
+                                
+                            </div>
+                            <button class="btncerrar">-</button>
+                        </div>
+                        <!-- CIERRE FOOTER EXPANDIDO -->
+                    </div>
+                    <!-- CIERRE PARTE OCULTA -->
+                </div> <!-- CIERRE DE CARD -->
+
+                <!-- Inicio DE CARD 3 -->
+                <div class="card">
+                    <!-- PARTE SIEMPRE VISIBLE -->
+                    <img src="imagenes/evento12.webp" alt="imagen de bailarines">
+
+                    <div class="info-basica">
+                        <span class="fecha">1 ENE</span>
+                        <span class="ciudad">Lima</span>
+                    </div>
+
+                    <h3>CURSOS DE DANZA 2026</h3>
+
+                    <!-- FOOTER SIEMPRE -->
+                    <div class="footer-card">
+                        <p>Desde: S/140</p>
+                        <button class="btnabrir">+</button>
+                    </div>
+
+                    <!-- PARTE OCULTA -->
+                    <div class="detalle" style="display: none;">
+                        <div class="info-detalle">
+                            <p>
+                                En Let's Dance, creemos que el baile es para todos. Por eso ofrecemos cursos diseñados para
+                                personas con experiencia y para quienes recién empiezan. Nuestro enfoque es cercano y
+                                progresivo: cada clase te acompaña a tu ritmo, con profesores
+                            </p>
+                            <p class="lugar"><strong>Lugar:</strong>Garage Studio Barranco</p>
+                            <p><strong>Hora:</strong> 12:00 PM</p>
+                        </div>
+
+                        <!-- FOOTER EXPANDIDO -->
+                        <div class="footer-detalle">
+                            
+                            <div class="lado-izquierdo">
+                                <p class="precio">Desde: S/140</p>
+                                <button class="btnInscribirse">Inscribirse</button>
+                            </div>
+                            <button class="btncerrar">-</button>
+                        </div>
+                        <!-- CIERRE FOOTER EXPANDIDO -->
+                    </div>
+                    <!-- CIERRE PARTE OCULTA -->
+                </div> <!-- CIERRE DE CARD -->
+            </div>
+        </section>
+        <!--FIN SECCION INICIO-->
+
+        <!--SECCION EVENTOS-->
+        <section id="eventos" style="display:none;">
+
+            <h2 class="eventosdes">Eventos Destacados</h2>
+
+            <!-- BUSCADOR + CATEGORÍAS -->
+            <div class="barra-eventos">
+
+                <div>
+                    <input type="text" placeholder="Buscar por evento o artista" id="buscador">
+                </div>
+
+                <p id="mensajeBusqueda" style="display:none;">
+                    No se encontraron resultados
+                </p>
+
+
+                <div class="categorias">
+
+                    <button id="btnCategorias">Categorías ▼</button>
+
+                    <div class="menu-categorias" style="display:none;" id="menuCategorias">
+                        <p data-categoria="concierto">Conciertos</p>
+                        <p data-categoria="deporte">Deportes</p>
+                        <p data-categoria="seminario">Conferencias & Seminarios</p>
+                        <p data-categoria="teatro">Teatros</p>
+                        <p data-categoria="viaje">Viajes & Aventura</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- aquí las cards -->
+            <div class="contenedor-eventos">
+
+                <!-- Inicio DE CARD 1 -->
+                <div class="card" data-categoria="concierto">
+                    <!-- PARTE SIEMPRE VISIBLE -->
+                    <img src="imagenes/eventos1.webp" alt="imagen de michael y mienbros de la sinfonia">
+
+                    <div class="info-basica">
+                        <span class="fecha">21 JUN</span>
+                        <span class="ciudad">Lima</span>
+                    </div>
+
+                    <h3>MICHAEL SINFÓNICO</h3>
+
+                    <!-- FOOTER SIEMPRE -->
+                    <div class="footer-card">
+                        <p>Desde: S/50</p>
+                        <button class="btnabrir">+</button>
+                    </div>
+
+                    <!-- PARTE OCULTA -->
+                    <div class="detalle" style="display: none;">
+                        <div class="info-detalle">
+                            <p>
+                                ¡El Rey del Pop como nunca lo habías escuchado!
+                                Prepárate para Tonnykeys X NOT MJ, el show sinfónico que redefine el legado de Michael
+                                Jackson. Una fusión explosiva de orquesta, banda en vivo y voces excepcionales
+                            </p>
+                            <p><strong>Lugar:</strong>Auditoria Colegio San Antonio de Padua</p>
+                            <p><strong>Hora:</strong> 5:00 PM</p>
+                        </div>
+
+                        <!-- FOOTER EXPANDIDO -->
+                        <div class="footer-detalle">
+                            <div class="lado-izquierdo">
+                                <p class="precio">Desde: S/60</p>
+                                <button class="btnInscribirse">Inscribirse</button>
+                            </div>
+                            
+                            <button class="btncerrar">-</button>
+
+                        </div>
+                        <!-- CIERRE FOOTER EXPANDIDO -->
+                    </div>
+                    <!-- CIERRE PARTE OCULTA -->
+
+                </div> <!-- CIERRE DE CARD -->
+
+                <!-- Inicio DE CARD 2 -->
+                <div class="card" data-categoria="deporte">
+                    <!-- PARTE SIEMPRE VISIBLE -->
+                    <img src="imagenes/evento2.webp" alt="imagen azul con letras que dicen piscina libre">
+
+                    <div class="info-basica">
+                        <span class="fecha">08 JUN</span>
+                        <span class="ciudad">Lima</span>
+                    </div>
+
+                    <h3>PISCINA LIBRE JUNIO 2026 (1hr) - VIDENA FDNDA</h3>
+
+                    <!-- FOOTER SIEMPRE -->
+                    <div class="footer-card">
+                        <p>Desde: S/30</p>
+                        <button class="btnabrir">+</button>
+                    </div>
+
+                        <!-- PARTE OCULTA -->
+                    <div class="detalle" style="display: none;">
+                        <div class="info-detalle">
+                            <p>
+                                Disfruta de una hora de piscina libre en Centro Acuático de la Videna, la mejor del país
+                                y sede de grandes competencias. Entrena o relájate en un escenario de alto rendimiento.
+                                Compra fácil por Joinnus y Yape. Para + 18 años ¡Te esperamos!
+                            </p>
+                            <p><strong>Lugar:</strong>Centro Acuático de la Videna (San Luis)</p>
+                            <p><strong>Hora:</strong> 8:00 AM</p>
+                        </div>
+
+                        <!-- FOOTER EXPANDIDO -->
+                        <div class="footer-detalle">
+                            <div class="lado-izquierdo">
+                                <p class="precio">Desde: S/50</p>
+                                <button class="btnInscribirse">Inscribirse</button>
+                            </div>
+                            
+                            <button class="btncerrar">-</button>
+                        
+                        </div>
+                        <!-- CIERRE FOOTER EXPANDIDO -->
+
+                    </div>
+                    <!-- CIERRE PARTE OCULTA -->
+
+                </div> <!-- CIERRE DE CARD -->
+
+                <!-- Inicio DE CARD 3 -->
+                <div class="card" data-categoria="viaje">
+                        <!-- PARTE SIEMPRE VISIBLE -->
+                    <img src="imagenes/evento3.webp" alt="imagen de las Catacumbas de san Francisco">
+
+                    <div class="info-basica">
+                        <span class="fecha">07 JUN</span>
+                        <span class="ciudad">Lima</span>
+                    </div>
+
+                    <h3>CITY TOUR PRIVADO EN LIMA - CATACUMBA DE SAN FRANCISCO 2026</h3>
+
+                    <!-- FOOTER SIEMPRE -->
+                    <div class="footer-card">
+                        <p>Desde: S/110</p>
+                        <button class="btnabrir">+</button>
+                    </div>
+
+                        <!-- PARTE OCULTA -->
+                    <div class="detalle" style="display: none;">
+                        <div class="info-detalle">
+                            <p>
+                                Aprende, disfruta y sorpréndete con la visita a las Catacumbas de San Francisco,
+                                una experiencia cultural para toda la familia. Conoce Lima de una forma diferente
+                                recorriendo sus calles históricas en un entretenido City Tour por el Centro de la
+                                ciudad.
+                            </p>
+                            <p><strong>Lugar:</strong> Catacumbas de San Francisco</p>
+                            <p><strong>Hora:</strong> 10:00 PM</p>
+                        </div>
+
+                        <!-- FOOTER EXPANDIDO -->
+                        <div class="footer-detalle">
+                            <div class="lado-izquierdo">
+                                <p class="precio">Desde: S/110</p>
+                                <button class="btnInscribirse">Inscribirse</button>
+                            </div>
+                            
+                            <button class="btncerrar">-</button>
+                          
+                        </div>
+                            <!-- CIERRE FOOTER EXPANDIDO -->
+                    </div>
+                        <!-- CIERRE PARTE OCULTA -->
+
+                </div> <!-- CIERRE DE CARD -->
+
+                <!-- Inicio DE CARD 4 -->
+                <div class="card" data-categoria="deporte">
+                        
+                    <!-- PARTE SIEMPRE VISIBLE -->
+                    <img src="imagenes/evento4.webp" alt="imagen de carros y letras que dicen copa jawheels">
+
+                    <div class="info-basica">
+                            <span class="fecha">14 JUN</span>
+                            <span class="ciudad">Lima</span>
+                    </div>
+
+                    <h3>PRO DRIFT - COPA JA WHEELS</h3>
+
+                        <!-- FOOTER SIEMPRE -->
+                    <div class="footer-card">
+                            <p>Desde: S/140</p>
+                            <button class="btnabrir">+</button>
+                    </div>
+
+                        <!-- PARTE OCULTA -->
+                    <div class="detalle" style="display: none;">
+                        <div class="info-detalle">
+                            <p>
+                                ...
+                            </p>
+                            <p><strong>Lugar:</strong>Autodromo la Chutana</p>
+                            <p><strong>Hora:</strong> 10:00 AM</p>
+                        </div>
+
+                        <!-- FOOTER EXPANDIDO -->
+                        <div class="footer-detalle">
+                            
+                            <div class="lado-izquierdo">
+                                <p class="precio">Desde: S/140</p>
+                                <button class="btnInscribirse">Inscribirse</button>
+                            </div>
+
+                            <button class="btncerrar">-</button>
+                            
+                        </div>
+                            <!-- CIERRE FOOTER EXPANDIDO -->
+                    </div>
+                    <!-- CIERRE PARTE OCULTA -->
+
+                </div> <!-- CIERRE DE CARD -->
+
+                <!-- Inicio DE CARD 5 -->
+                <div class="card" data-categoria="seminario">
+                        
+                    <!-- PARTE SIEMPRE VISIBLE -->
+                    <img src="imagenes/evento5.webp" alt="imagen con letras que dicen ekballo - el impulso del espiritu">
+
+                    <div class="info-basica">
+                        <span class="fecha">07 AGO</span>
+                        <span class="ciudad">Lima</span>
+                    </div>
+
+                    <h3>EKBALLO - IMPULSO DEL ESPIRITU</h3>
+
+                    <!-- FOOTER SIEMPRE -->
+                    <div class="footer-card">
+                        <p>Desde: S/60</p>
+                        <button class="btnabrir">+</button>
+                    </div>
+
+                    <!-- PARTE OCULTA -->
+                    <div class="detalle" style="display: none;">
+                        <div class="info-detalle">
+                            <p>
+                                Despertando a la iglesia de los últimos tiempos al cumplimiento de la gran comisión.
+                                Seremos motivados e inspirados a poder ser enviados por aquellos que aún no conocen de
+                                Jesús
+                            </p>
+                            <p><strong>Lugar:</strong>Guzmán Blanco 350</p>
+                            <p><strong>Hora:</strong> 7:00 PM</p>
+                        </div>
+
+                        <!-- FOOTER EXPANDIDO -->
+                        <div class="footer-detalle">
+                            
+                            <div class="lado-izquierdo">
+                                <p class="precio">Desde: S/60</p>
+                                <button class="btnInscribirse">Inscribirse</button>
+                            </div>
+                            <button class="btncerrar">-</button>
+                        </div>
+                            <!-- CIERRE FOOTER EXPANDIDO -->
+                    </div>
+                        <!-- CIERRE PARTE OCULTA -->
+
+                </div> <!-- CIERRE DE CARD -->
+
+                <!-- Inicio DE CARD 6 -->
+                <div class="card" data-categoria="teatro">
+                        
+                    <!-- PARTE SIEMPRE VISIBLE -->
+                    <img src="imagenes/evento6.webp" alt="imagen promocional con los personajes de la obra">
+
+                    <div class="info-basica">
+                        <span class="fecha">07 JUN</span>
+                        <span class="ciudad">Lima</span>
+                    </div>
+
+                    <h3>EL REGALO A MAMÁ</h3>
+
+                        <!-- FOOTER SIEMPRE -->
+                    <div class="footer-card">
+                        <p>Desde: S/25</p>
+                        <button class="btnabrir">+</button>
+                    </div>
+
+                    <!-- PARTE OCULTA -->
+                    <div class="detalle" style="display: none;">
+                        <div class="info-detalle">
+                            <p>
+                                “El Regalo a Mamá” es una comedia dramática sobre esas familias que viven peleando, pero
+                                que aun así se siguen esperando en la mesa. Y aunque parezca exagerado… muchas de estas
+                                cosas pasaron de verdad.
+                            </p>
+                            <p><strong>Lugar:</strong>Blad Studios</p>
+                            <p><strong>Hora:</strong> 8:00 PM</p>
+                        </div>
+
+                        <!-- FOOTER EXPANDIDO -->
+                        <div class="footer-detalle">
+                            
+                            <div class="lado-izquierdo">
+                                <p class="precio">Desde: S/25</p>
+                                <button class="btnInscribirse">Inscribirse</button>
+                            </div>
+
+                            <button class="btncerrar">-</button>
+                            
+                        </div>
+                        <!-- CIERRE FOOTER EXPANDIDO -->
+
+                    </div>
+                     <!-- CIERRE PARTE OCULTA -->
+
+                </div> <!-- CIERRE DE CARD -->
+
+                <!-- Inicio DE CARD 7 -->
+                <div class="card" data-categoria="viaje">
+                    <!-- PARTE SIEMPRE VISIBLE -->
+                        
+                    <img src="imagenes/evento7.webp" alt="imagen del cementerio Presbítero Matías Maestro">
+
+                    <div class="info-basica">
+                        <span class="fecha">11 JUN</span>
+                        <span class="ciudad">Lima</span>
+                    </div>
+
+                    <h3>TOUR DEL MIEDO CEMENTERIO PRESBÍTERO SIN TRASLADO 2026</h3>
+
+                    <!-- FOOTER SIEMPRE -->
+                    <div class="footer-card">
+                        <p>Desde: S/55</p>
+                        <button class="btnabrir">+</button>
+                    </div>
+
+                    <!-- PARTE OCULTA -->
+                    <div class="detalle" style="display: none;">
+                        <div class="info-detalle">
+                            <p>
+                                Entre sombras y silencio, el pasado observa… Descubre los secretos del Cementerio
+                                Presbítero Matías Maestro. Vamos…
+                            </p>
+                            <p><strong>Lugar:</strong>Museo Cementerio Presbítero Matías Maestro</p>
+                            <p><strong>Hora:</strong> 7:00 PM</p>
+                        </div>
+
+                        <!-- FOOTER EXPANDIDO -->
+                        <div class="footer-detalle">
+                            <div class="lado-izquierdo">
+                                <p class="precio">Desde: S/55</p>
+                                <button class="btnInscribirse">Inscribirse</button>
+                            </div>
+
+                            <button class="btncerrar">-</button>
+
+                        </div>
+                        <!-- CIERRE FOOTER EXPANDIDO -->
+
+                    </div>
+                    <!-- CIERRE PARTE OCULTA -->
+
+                </div> <!-- CIERRE DE CARD -->
+
+                <!-- Inicio DE CARD 8 -->
+                <div class="card" data-categoria="teatro">
+
+                    <!-- PARTE SIEMPRE VISIBLE -->
+                    <img src="imagenes/evento8.webp" alt="imagen peomocional de la obra con la iamgen de la protagonista">
+
+                    <div class="info-basica">
+                        <span class="fecha">11 JUN</span>
+                        <span class="ciudad">Lima</span>
+                    </div>
+
+                    <h3>OBRA TEATRAL: CASA DE MUÑECAS</h3>
+
+                        <!-- FOOTER SIEMPRE -->
+                    <div class="footer-card">
+                        <p>Desde: S/25</p>
+                        <button class="btnabrir">+</button>
+                    </div>
+
+                        <!-- PARTE OCULTA -->
+                    <div class="detalle" style="display: none;">
+                        <div class="info-detalle">
+                            <p>
+                                ¿Cuál es el papel de una mujer cuando su hogar perfecto resulta ser una jaula de
+                                cristal?
+                                La aparente felicidad y prosperidad de los Helmer está a punto de derrumbarse. Un
+                                secreto oculto por amor y un implacable chantaje pondrán a Nora, nuestra protagonista,
+                                entre la espada y la pared, obligándola a confrontar una cruda realidad.
+                            </p>
+                            <p><strong>Lugar:</strong> Umbral Centro Cultural</p>
+                            <p><strong>Hora:</strong> 8:00 PM</p>
+                        </div>
+
+                        <!-- FOOTER EXPANDIDO -->
+                        <div class="footer-detalle">
+                            
+                            <div class="lado-izquierdo">
+                                <p class="precio">Desde: S/25</p>
+                                <button class="btnInscribirse">Inscribirse</button>
+                                
+                            </div>
+
+                            <button class="btncerrar">-</button>
+
+                        </div>
+                        <!-- CIERRE FOOTER EXPANDIDO -->
+
+                    </div>
+                    <!-- CIERRE PARTE OCULTA -->
+
+                </div> <!-- CIERRE DE CARD -->
+
+                <!-- Inicio DE CARD 9 -->
+                <div class="card" data-categoria="concierto">
+                    <!-- PARTE SIEMPRE VISIBLE -->
+                    <img src="imagenes/evento9.webp" alt="imagen promocional del tour de Ana Torroja">
+
+                    <div class="info-basica">
+                        <span class="fecha">14 NOV</span>
+                        <span class="ciudad">Lima</span>
+                    </div>
+
+                    <h3>ANA TORROJA EN CONCIERTO</h3>
+
+                    <!-- FOOTER SIEMPRE -->
+                    <div class="footer-card">
+                        <p>Desde: S/42</p>
+                        <button class="btnabrir">+</button>
+                    </div>
+
+                    <!-- PARTE OCULTA -->
+                    <div class="detalle" style="display: none;">
+                        <div class="info-detalle">
+                            <p>
+                                Ana Torroja llega a Lima para reencontrarse con su público en una noche única donde la
+                                emoción, la nostalgia y la música se unen en un espectáculo inolvidable. “Se ha acabado
+                                el show” es una experiencia vibrante que revive los grandes clásicos que marcaron
+                                generaciones, junto a una puesta en escena renovada y una Ana más cercana, intensa y
+                                vigente que nunca.
+                            </p>
+                            <p><strong>Lugar:</strong>Auditoria Colegio San Agustín</p>
+                            <p><strong>Hora:</strong> 8:00 PM</p>
+
+                        </div>
+                        
+                        <!-- FOOTER EXPANDIDO -->
+                        <div class="footer-detalle">
+                            
+                            <div class="lado-izquierdo">
+                                <p class="precio">Desde: S/42</p>
+                                <button class="btnInscribirse">Inscribirse</button>
+                                
+                            </div>
+
+                            <button class="btncerrar">-</button>
+
+                        </div>
+                            <!-- CIERRE FOOTER EXPANDIDO -->
+                    </div>
+                    <!-- CIERRE PARTE OCULTA -->
+
+                </div> <!-- CIERRE DE CARD -->
+
+            </div>
+
+        </section>
+        <!-- FIN SECCION EVENTOS-->
+
+        <!--SECCION MIS EVENTOS-->
+        <section id="misEventos" style="display:none;">
+
+            <h2>MIS EVENTOS</h2>
+
+            <div id="listaMisEventos">
+                <p id="mensajeVacio">No tienes eventos inscritos</p>
+            </div>
+
+        </section>
+        <!-- FIN SECCION MIS EVENTOS-->
+    </main>
+    <footer>
+
+        <div class="footer-izquierda">
+            <p>© 2026 Yuments</p>
+        </div>
+
+        <div class="footer-centro">
+            <img src="imagenes/logos/Logo.png" alt="logo Yuments">
+        </div>
+
+        <div class="footer-derecha">
+            <img src="imagenes/logos/twitter-x-seeklogo-2.svg" alt="X">
+            <img src="imagenes/logos/instagram-svgrepo-com.svg" alt="Instagram">
+        </div>
+    </footer>
+
+    <div id="modalRegistro" class="modal" style="display:none;">
+
+        <div class="tarjeta-registro">
+            <div class="modal-contenido">
+
+                <img src="imagenes/logos/onlylogo.png" alt="logo Yuments" class="logo-modal">
+
+                <button class="cerrar">X</button>
+
+                <h2>Registrate</h2>
+
+                <label>Nombre</label>
+                <input type="text" placeholder="Nombre">
+
+                <label>Correo</label>
+                <input type="email" placeholder="Correo electrónico">
+
+                <label>Contraseña</label>
+                <input type="password" placeholder="Contraseña +8 caracteres">
+
+                <label>Confirmar contraseña</label>
+                <input type="password" placeholder="Confirma contraseña">
+
+                <button id="btnRegistrar">Registrarme</button>
+
+                <p class="irLogin">¿Ya tienes cuenta? Iniciar sesión</p>
+
+            </div><!-- modal-contenido -->
+
+        </div>
+
+        
+
+    </div>  <!-- modalLogin -->
+
+    <div id="modalLogin" class="modal" style="display:none;">
+
+        <div class="tarjeta-login">
+            <div class="modal-contenido">
+
+                <img src="imagenes/logos/onlylogo.png" alt="logo Yuments" class="logo-modal">
+
+                <button class="cerrar">X</button>
+
+                <h2>Iniciar sesión</h2>
+
+                <label>Correo</label>
+                <input type="email" placeholder="Correo electrónico">
+
+                <label>Contraseña</label>
+                <input type="password" placeholder="Contraseña">
+
+                <button id="btnLoginModal">Iniciar sesión</button>
+
+                <p class="irRegistro">¿No tienes cuenta? Registrarte</p>
+                </div><!-- modal-contenido -->
+
+        </div>  <!-- modalRegistro -->
+
+    </div>
+
+        
+
+    <script src="app.js"></script>
+</body>
+
+</html>
